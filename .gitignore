@@ -1,0 +1,5 @@
+# Ignore data files and environment folders
+data/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store

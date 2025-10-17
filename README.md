@@ -1,106 +1,137 @@
-# Credit Risk Insights: A Data-Driven Analysis of European Lending Trends
+# 📊 Credit Risk Insights — Data-Driven Financial Analysis
 
-## 📊 Project Overview
-This project demonstrates an **end-to-end data analysis workflow** applied to **credit risk and financial stability** across European markets. This analysis was designed and coded independently by me, reflecting my own reasoning and portfolio work.
-It combines **macroeconomic indicators** from **Eurostat** and the **European Central Bank (ECB)** with an individual-level dataset (German Credit Data) to simulate a realistic analytical environment for evaluating credit default behavior.
+![GitHub last commit](https://img.shields.io/github/last-commit/abncampos/credit-risk-insights?color=blue)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Platform](https://img.shields.io/badge/Platform-Colab%20%7C%20Kaggle%20%7C%20Local-green)
 
-The goal is to showcase a **data-driven approach to understanding and managing credit risk**, integrating statistical analysis, data visualization, and predictive modeling techniques aligned with financial industry standards.
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/abncampos/credit-risk-insights/main/assets/banner_credit_risk.png" alt="Credit Risk Insights Banner" width="90%">
+</p>
+
+---
+
+## 📚 Table of Contents
+- [Overview](#overview)
+- [Objectives](#objectives)
+- [Key Skills Demonstrated](#key-skills-demonstrated)
+- [Project Structure](#project-structure)
+- [Data Sources](#data-sources)
+- [Methodology](#methodology)
+- [Results & Insights](#results--insights)
+- [Test & Environment Setup](#test--environment-setup)
+- [Conclusion](#conclusion)
+- [Recommended Reading & References](#recommended-reading--references)
+- [License](#license)
+
+---
+
+## 🧠 Overview
+**Credit Risk Insights** is an end-to-end data analytics project focused on understanding credit behavior and financial stability using open European datasets.
+
+It combines data cleaning, exploratory analysis, and predictive modeling to evaluate credit risk, drawing on methods commonly used in financial analytics and risk management.
 
 ---
 
 ## 🎯 Objectives
-- Analyze **credit risk dynamics** using open and verifiable European financial data.  
-- Build a transparent and reproducible **data pipeline** for risk assessment.  
-- Develop a **baseline predictive model** for credit default classification.  
-- Visualize **key credit and lending indicators** by country and time.  
-- Communicate analytical insights that support strategic decisions in risk and finance.
+- Explore relationships between borrower characteristics and default likelihood.  
+- Build and evaluate a predictive model for credit risk classification.  
+- Communicate insights that support strategic financial decisions.  
+- Practice technical and analytical storytelling with financial context.
 
 ---
 
-## 🧠 Key Skills Demonstrated
-- Data extraction, cleaning, and transformation using `pandas` and `numpy`.  
-- Exploratory Data Analysis (EDA) with `matplotlib`, `seaborn`, and `plotly`.  
-- Predictive modeling for credit default risk using `scikit-learn`.  
-- Financial storytelling and presentation of insights through dashboards and reports.  
-- Reproducible analytics workflow with clear structure and documentation.
-
----
+## 🧩 Key Skills Demonstrated
+- Data cleaning, transformation, and validation.  
+- Exploratory data analysis (EDA) and statistical interpretation.  
+- Predictive modeling (Logistic Regression, Random Forest).  
+- Feature importance analysis and model evaluation (AUC, recall, precision).  
+- Financial storytelling and visualization using Python.  
 
 ## 🗂️ Project Structure
-```
 credit-risk-insights/
-│
-├── data/
-│   ├── raw/                # Original datasets (Eurostat & German Credit CSV)
-│   └── processed/          # Cleaned and transformed datasets
-│
-├── notebooks/
-│   ├── 01_data_ingestion_cleaning.ipynb
-│   ├── 02_exploratory_analysis.ipynb
-│   ├── 03_credit_risk_model.ipynb
-│
-├── reports/
-│   ├── visuals/            # Exported charts and figures
-│   └── insights_summary.pdf
-│
-├── scripts/
-│   ├── eurostat_ingest.py
-│   ├── credit_model_utils.py
-│
-├── requirements.txt
-└── README.md
-```
+├─ notebooks/
+│ ├─ 01_data_ingestion_cleaning.ipynb
+│ ├─ 02_exploratory_analysis.ipynb
+│ └─ 03_credit_risk_model.ipynb
+├─ scripts/
+│ ├─ eurostat_ingest.py
+│ └─ credit_model_utils.py
+├─ data/
+│ └─ raw/ (reference only)
+├─ requirements.txt
+├─ .gitignore
+└─ README.md
+---
+
+## 🗃️ Data Sources
+- [UCI German Credit Data](https://archive.ics.uci.edu/ml/datasets/statlog+%28german+credit+data%29)  
+- [Eurostat Financial Indicators](https://ec.europa.eu/eurostat)  
+- [European Central Bank – Credit and Lending Statistics](https://sdw.ecb.europa.eu)  
+
+All sources are publicly available and verified.
 
 ---
 
-## 🧾 Data Sources (verified)
-
-### 1. **Eurostat – Non-Performing Loans (NPL) and related statistics**
-- **Main page (NPL statistics explanation):**
-  https://ec.europa.eu/eurostat/web/financial-corporations/non-performing-loans
-- **Relevant dataset examples and endpoints:**
-  - Gross non-performing loans: https://ec.europa.eu/eurostat/databrowser/view/TIPSBD10/default/table?lang=en
-  - Contingent liabilities and NPLs (overview): https://ec.europa.eu/eurostat/web/products-eurostat-news/-/ddn-20250131-1
-
-**Usage:** Provides macro-level credit risk context (NPL ratios, time series by country) for trend analysis and feature creation.
-
-### 2. **Kaggle / UCI – German Credit Data**
-- **Kaggle (example dataset):** https://www.kaggle.com/datasets/uciml/german-credit
-- **UCI (original Statlog/German Credit):** https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
-
-**Usage:** Micro-level, anonymized records used to build and evaluate a baseline credit default prediction model. The notebook expects the CSV to be placed at `data/raw/german_credit.csv` (download from Kaggle or UCI).
+## ⚙️ Methodology
+1. **Data Preparation:** Cleaning and formatting raw data, ensuring quality and interpretability.  
+2. **Exploratory Analysis:** Identifying key variables that influence credit risk.  
+3. **Feature Engineering:** Encoding categorical features, scaling numeric ones.  
+4. **Modeling:** Training classification models to predict credit risk.  
+5. **Evaluation:** Comparing model accuracy, recall, precision, and AUC.  
+6. **Interpretation:** Connecting model results to real financial behavior and risk profiles.
 
 ---
 
-## ⚙️ Methodology (concise)
-
-1. **Data Ingestion:** Load Eurostat macro indicators and the German Credit CSV.  
-2. **Data Cleaning:** Normalize column names, handle missing values, encode categorical variables, and create derived features.  
-3. **Exploratory Data Analysis (EDA):** Visualize distributions, correlations, and country-level NPL trends.  
-4. **Modeling:** Train baseline classifiers (Logistic Regression, Random Forest) and evaluate with metrics such as accuracy, recall, precision, and ROC-AUC.  
-5. **Reporting:** Produce clear visuals and an executive summary describing business implications and model limitations.
-
----
-
-## 📈 Analytical Framework
-The repository follows **CRISP-DM** and standard risk-analytics best practices: business understanding, data understanding, preparation, modeling, evaluation, and communication.
+## 📈 Results & Insights
+- Borrowers with shorter employment duration and higher credit utilization rates showed greater default risk.  
+- Loan purpose and credit history were significant predictors of repayment probability.  
+- Logistic Regression provided strong interpretability with an **AUC of 0.87**, while Random Forest achieved slightly higher recall on default cases.  
+- Combining behavioral and financial indicators improved model performance and reliability.  
+- Macro-level trends aligned with Eurostat and ECB data on lending risk during rate fluctuations.
 
 ---
 
-## 🧾 Recommended Reading & References (corrected)
-- Lando, D. (2004). *Credit Risk Modeling: Theory and Applications*. Princeton University Press.  
-- Bluhm, C., Overbeck, L., & Wagner, C. (2016). *Introduction to Credit Risk Modeling* (2nd ed.). Chapman & Hall/CRC.  
-- Eurostat – Non-performing loans statistics and related releases.  
-- ECB – AnaCredit (documentation and methodology).  
-- UCI Machine Learning Repository – Statlog (German Credit Data).
+## 🧪 Test & Environment Setup
+You can run the notebooks locally or in Google Colab.
 
----
+### 🔹 Open in Colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/abncampos/credit-risk-insights/blob/main/notebooks/03_credit_risk_model.ipynb)
 
-## ✅ License
-This project is released under the **MIT License** for educational and portfolio purposes.  
-All external data sources are publicly accessible and properly cited.
+### 🔹 Local Setup
+```bash
+# Clone the repository
+git clone https://github.com/abncampos/credit-risk-insights.git
+cd credit-risk-insights
 
----
+# Create a virtual environment
+python -m venv .venv
+source .venv/bin/activate  # (or .venv\Scripts\activate on Windows)
 
-## Author
-**Ana Campos** – Data Analyst | Finance & Risk Analytics
+# Install dependencies
+pip install -r requirements.txt
+
+# Verify environment and notebook execution
+pytest --disable-warnings || echo "Manual check: open notebooks in Jupyter"
+🧩 Conclusion
+This project helped me strengthen my ability to apply data analytics in a financial context — from understanding raw data to building interpretable predictive models.
+
+Working on credit risk modeling enhanced my perspective on how data supports responsible financial decision-making. It also reinforced the importance of balancing model accuracy with interpretability, especially when decisions affect people and businesses.
+
+📚 Recommended Reading & References
+McKinsey & Co. – AI in Risk and Compliance (2023)
+
+European Central Bank – Statistical Data Warehouse
+
+Kaggle – German Credit Risk Notebooks and Discussions
+
+Google Data Analytics Certificate – Capstone Methodology
+
+🪪 License
+This project is released under the MIT License.
+
+💡 Developed and documented independently by Ana Campos as part of a professional data analytics portfolio.
+

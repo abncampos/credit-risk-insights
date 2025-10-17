@@ -1,5 +1,7 @@
 # 📊 Credit Risk Insights — Data-Driven Financial Analysis
 
+Exploring Financial Data and Predicting Credit Risk  
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/abncampos/credit-risk-insights?color=blue)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
@@ -9,9 +11,8 @@
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/abncampos/credit-risk-insights/main/assets/banner_credit_risk.png" alt="Credit Risk Insights Banner" width="90%">
+  <img src="assets/banner.png" alt="Credit Risk Insights Banner" width="80%">
 </p>
-
 ---
 
 ## 📚 Table of Contents

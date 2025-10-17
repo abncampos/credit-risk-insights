@@ -68,9 +68,6 @@ credit-risk-insights/
 ├─ .gitignore
 └─ README.md
 
-yaml
-Copiar código
-
 ---
 
 ## 🗃️ Data Sources

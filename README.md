@@ -51,6 +51,8 @@ It combines data cleaning, exploratory analysis, and predictive modeling to eval
 - Feature importance analysis and model evaluation (AUC, recall, precision).  
 - Financial storytelling and visualization using Python.  
 
+---
+
 ## 🗂️ Project Structure
 credit-risk-insights/
 ├─ notebooks/
@@ -65,6 +67,10 @@ credit-risk-insights/
 ├─ requirements.txt
 ├─ .gitignore
 └─ README.md
+
+yaml
+Copiar código
+
 ---
 
 ## 🗃️ Data Sources
@@ -101,27 +107,54 @@ You can run the notebooks locally or in Google Colab.
 ### 🔹 Open in Colab
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/abncampos/credit-risk-insights/blob/main/notebooks/03_credit_risk_model.ipynb)
 
-### 🔹 Local Setup
-```bash
-# Clone the repository
-git clone https://github.com/abncampos/credit-risk-insights.git
-cd credit-risk-insights
+---
 
-# Create a virtual environment
-python -m venv .venv
-source .venv/bin/activate  # (or .venv\Scripts\activate on Windows)
+## 🧭 Local Setup
 
-# Install dependencies
+1. **Clone the Repository:**  
+   Clone the project from GitHub and navigate into the folder.
+   ```bash
+   git clone https://github.com/abnc ampos/credit-risk-insights.git
+   cd credit-risk-insights
+
+
+2. **Create a Virtual Environment:**
+Set up a Python virtual environment for package management.
+
+python -m venv .venv  
+source .venv/bin/activate   # (or .venv\Scripts\activate on Windows)
+
+
+3. **Install Dependencies:**
+Install all required packages.
+
+
 pip install -r requirements.txt
 
-# Verify environment and notebook execution
+
+4. **Verify Environment and Notebook Execution:**
+Run automated tests and manually check Jupyter notebooks.
+
 pytest --disable-warnings || echo "Manual check: open notebooks in Jupyter"
-🧩 Conclusion
-This project helped me strengthen my ability to apply data analytics in a financial context — from understanding raw data to building interpretable predictive models.
 
-Working on credit risk modeling enhanced my perspective on how data supports responsible financial decision-making. It also reinforced the importance of balancing model accuracy with interpretability, especially when decisions affect people and businesses.
+---
 
-📚 Recommended Reading & References
+
+## ✅ Conclusion
+
+
+
+This project strengthened my ability to apply data analytics in a financial context — from understanding raw data to building predictive models for credit risk analysis.
+
+It also deepened my understanding of how data supports responsible financial decision-making and reinforced good practices in analytics-driven risk management.
+
+
+---
+
+
+## 📚 Recommended Reading & References
+
+
 McKinsey & Co. – AI in Risk and Compliance (2023)
 
 European Central Bank – Statistical Data Warehouse
@@ -130,8 +163,13 @@ Kaggle – German Credit Risk Notebooks and Discussions
 
 Google Data Analytics Certificate – Capstone Methodology
 
-🪪 License
-This project is released under the MIT License.
+
+---
+
+
+## 🪪 License
+
+This project is released under the MIT License
+.
 
 💡 Developed and documented independently by Ana Campos as part of a professional data analytics portfolio.
-

@@ -10,12 +10,6 @@ Exploring Financial Data and Predicting Credit Risk
 
 ---
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/abncampos/credit-risk-insights/main/assets_banner/banner.png" alt="Credit Risk Insights Banner" width="800">
-</p>
-
----
-
 ## 📚 Table of Contents
 - [Overview](#overview)
 - [Objectives](#objectives)

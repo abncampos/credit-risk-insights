@@ -11,7 +11,7 @@ Exploring Financial Data and Predicting Credit Risk
 ---
 
 <p align="center">
-  <img src="assets_banner/Vis%C3%A3o%20de%20Risco%20de%20Cr%C3%A9dito.png" alt="Credit Risk Insights Banner" width="800">
+  <img src="assets_banner/banner.png" alt="Credit Risk Insights Banner" width="800">
 </p>
 ---
 

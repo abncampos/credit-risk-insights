@@ -1,6 +1,6 @@
 # 📊 Credit Risk Insights — Data-Driven Financial Analysis
 
-Exploring Financial Data and Predicting Credit Risk  
+Exploring financial data and predicting credit risk  
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/abncampos/credit-risk-insights?color=blue)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
@@ -78,7 +78,7 @@ All sources are publicly available and verified.
 ## ⚙️ Methodology
 1. **Data Preparation:** Cleaning and formatting raw data, ensuring quality and interpretability.  
 2. **Exploratory Analysis:** Identifying key variables that influence credit risk.  
-3. **Feature Engineering:** Encoding categorical features, scaling numeric ones.  
+3. **Feature Engineering:** Encoding categorical features, scaling numerical ones.  
 4. **Modeling:** Training classification models to predict credit risk.  
 5. **Evaluation:** Comparing model accuracy, recall, precision, and AUC.  
 6. **Interpretation:** Connecting model results to real financial behavior and risk profiles.
@@ -86,7 +86,7 @@ All sources are publicly available and verified.
 ---
 
 ## 📈 Results & Insights
-- Borrowers with shorter employment duration and higher credit utilization rates showed greater default risk.  
+- Borrowers with shorter employment duration and higher credit utilization rates exhibited greater default risk.  
 - Loan purpose and credit history were significant predictors of repayment probability.  
 - Logistic Regression provided strong interpretability with an **AUC of 0.87**, while Random Forest achieved slightly higher recall on default cases.  
 - Combining behavioral and financial indicators improved model performance and reliability.  
